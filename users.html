@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- custom css file link-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- font awesome icon cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <title>Users</title>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="container users-container">
+                <!-- My Profile div -->
+                <div class="user-profile my-profile">
+                    <div class="profile-img img">
+                        <img src="images/profile-pic.jfif" />
+                    </div>
+                    <div class="profile-details">
+                        <div class="name-details">
+                            <p>Luqman Ramzan</p>
+                            <span>Active now</span>
+                        </div>
+                        <a href="#">
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Search Input -->
+                <div class="search-users">
+                    <label for="searchInput">
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            title="Search Users"></i>
+                        <i
+                            class="fa-solid fa-xmark d-none"
+                            title="Clear Search Field"></i>
+                    </label>
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Enter name to search" />
+                </div>
+
+                <!-- Users -->
+
+                <div id="users" class="users">
+                    <div class="user-profile" title="Luqman Ramzan">
+                        <div class="profile-img img">
+                            <img src="images/profile-pic.jfif" />
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-details">
+                                <p>Luqman Ramzan</p>
+                                <div>This is last message</div>
+                            </div>
+                            <span class="online"
+                                ><i class="fa-solid fa-circle"></i
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="user-profile" title="Salman Asghar">
+                        <div class="profile-img img">
+                            <img src="images/profile-pic.jfif" />
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-details">
+                                <p>Salman Asghar</p>
+                                <div>This is last message</div>
+                            </div>
+                            <span class="offline"
+                                ><i class="fa-solid fa-circle"></i
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="user-profile" title="Hassan Nadeem">
+                        <div class="profile-img img">
+                            <img src="images/profile-pic.jfif" />
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-details">
+                                <p>Hassan Nadeem</p>
+                                <div>This is last message</div>
+                            </div>
+                            <span class="online"
+                                ><i class="fa-solid fa-circle"></i
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="user-profile" title="Abdur Rehman">
+                        <div class="profile-img img">
+                            <img src="images/profile-pic.jfif" />
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-details">
+                                <p>Abdur Rehman</p>
+                                <div>This is last message</div>
+                            </div>
+                            <span class="offline"
+                                ><i class="fa-solid fa-circle"></i
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="user-profile" title="Ali Faisal">
+                        <div class="profile-img img">
+                            <img src="images/profile-pic.jfif" />
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-details">
+                                <p>Ali Faisal</p>
+                                <div>This is last message</div>
+                            </div>
+                            <span class="offline"
+                                ><i class="fa-solid fa-circle"></i
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="user-profile" title="Abu Bakr">
+                        <div class="profile-img img">
+                            <img src="images/profile-pic.jfif" />
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-details">
+                                <p>Abu Bakr</p>
+                                <div>This is last message</div>
+                            </div>
+                            <span class="offline"
+                                ><i class="fa-solid fa-circle"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column">
+            <a href="chating.html">Chating</a>
+            <a href="users.html">User</a>
+            <a href="signup.html">Signup </a>
+            <a href="index.html">Login </a>
+        </div>
+    </body>
+    <script src="javascript/filter-searched-users.js"></script>
+</html>

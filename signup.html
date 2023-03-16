@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- custom css file link-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Online Fontawesome icons cdn-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <title>Signup Form</title>
+        <style>
+            .main-container {
+                margin: 30px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="container">
+                <h1>Hello hello app</h1>
+                <div class="error">This is an error message!</div>
+                <form class="form">
+                    <div class="double-inputs">
+                        <div class="input-group">
+                            <label for="f-name">First Name</label>
+                            <input
+                                required
+                                type="text"
+                                id="f-name"
+                                placeholder="First Name" />
+                        </div>
+                        <div class="input-group">
+                            <label for="l-name">Last Name</label>
+                            <input
+                                required
+                                type="text"
+                                id="l-name"
+                                placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            required
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email" />
+                    </div>
+                    <div class="double-inputs">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input
+                                required
+                                type="password"
+                                id="password"
+                                placeholder="Password" />
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="input-group">
+                            <label for="matchPassword">Confirm Password</label>
+                            <input
+                                required
+                                type="password"
+                                id="matchPassword"
+                                placeholder="Confirm Password" />
+                            <i class="fa-solid fa-eye"></i>
+                            <div id="password-error">Match the passwords</div>
+                        </div>
+                    </div>
+                    <div class="input-group image-input">
+                        <label for="file">Select image</label>
+                        <input
+                            required
+                            type="file"
+                            id="file"
+                            placeholder="Enter your password" />
+                    </div>
+                    <button type="submit">Continue to chat</button>
+                </form>
+                <div class="other-links">
+                    <p>Already signed up?</p>
+                    <a href="index.html">Login now</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column">
+            <a href="chating.html">Chating</a>
+            <a href="users.html">User</a>
+            <a href="signup.html">Signup </a>
+            <a href="index.html">Login </a>
+        </div>
+    </body>
+
+    <script src="javascript/show-hide-password.js"></script>
+    <script src="javascript/match-password.js"></script>
+</html>

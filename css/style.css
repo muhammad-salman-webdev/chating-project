@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", system-ui, cursive;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --height: 40px;
+    --border-radius: 4px;
+}
+
+body {
+    display: flex;
+    background: #cacac9;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+html::-webkit-scrollbar {
+    width: 3px;
+}
+.main-container {
+    width: 450px;
+    margin: 50px 0;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 3px rgba(66, 66, 66, 0.486);
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 23px;
+    border-bottom: 0.5px solid #c7c3c3;
+    padding-bottom: 10px;
+}
+
+.error {
+    margin: 15px 0;
+    background-color: #f7d6d8;
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    color: #992837;
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.double-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-inputs .input-group {
+    width: 48%;
+}
+
+.input-group label {
+    font-size: 17px;
+}
+
+.input-group input {
+    height: var(--height);
+    border-radius: var(--border-radius);
+    border: 1px solid #cececd;
+    outline: none;
+    margin: 0px 0 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #757575;
+}
+
+.input-group i {
+    position: absolute;
+    right: 7px;
+    cursor: pointer;
+    top: 38px;
+    font-size: 16px;
+    color: #757575;
+    width: 22px;
+}
+
+.input-group input[type="password"] {
+    padding-right: 40px;
+}
+
+.input-group input ~ i ~ div {
+    width: max-content;
+    color: red;
+    padding: 2px 4px;
+    font-size: 12px;
+    user-select: none;
+    border: 1px solid red;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -23px;
+    /* margin: 5px 0 10px; */
+    display: none;
+}
+
+.input-group input ~ i ~ div::before {
+    content: "";
+    width: 8px;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-left: 1px solid red;
+    border-top: 1px solid red;
+    transform: rotate(45deg);
+    top: -5.5px;
+    left: 16px;
+}
+
+.image-input input {
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: auto;
+}
+
+.form button {
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background-color: #323231;
+    border: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 25px 0 20px;
+    filter: brightness(90%) blur(0.2px);
+}
+
+.form button:hover {
+    filter: brightness(100%) blur(0px);
+}
+
+.other-links {
+    display: flex;
+    justify-content: center;
+}
+
+.other-links a {
+    color: #575756;
+    margin: 0 0 0 5px;
+}
+
+.other-links a:hover {
+    text-decoration: underline;
+}
+
+/* The users styles */
+.my-profile .profile-img {
+    width: 70px;
+}
+
+.my-profile .name-details p {
+    font-size: 19px;
+}
+
+.my-profile .profile-details a {
+    padding: 7px 12px;
+    background-color: #323231;
+    color: white;
+    border-radius: 5px;
+}
+
+.my-profile .profile-details a:hover {
+    transform: scale(1.04);
+}
+
+.profile-img {
+    width: 50px;
+}
+
+.img {
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-profile {
+    display: flex;
+    /* background-color: orange; */
+    align-items: center;
+    padding: 0px 0 15px 0;
+}
+
+.user-profile:not(:last-child) {
+    margin: 10px 0;
+}
+
+.user-profile:not(:last-child) {
+    border-bottom: 0.5px solid rgba(88, 88, 88, 0.274);
+}
+
+.search-users {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40px;
+    margin: 20px 0 20px;
+    justify-content: space-between;
+}
+
+.search-users input {
+    width: 85%;
+    padding: 0 10px;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #9a9a97;
+    color: #8c8c8b;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-users input::placeholder {
+    color: #8c8c8b;
+}
+
+.search-users label {
+    width: 15%;
+}
+
+.search-users label i {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 4px 4px 0px;
+    border: none;
+    background-color: #323231;
+    border: 1px solid #9a9a97;
+    border-left: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.name-details {
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+}
+
+.name-details p {
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
+}
+
+.name-details p span {
+    background-color: yellow;
+    text-transform: auto;
+}
+
+.name-details div {
+    font-size: 13px;
+    color: #555553;
+}
+
+.profile-details {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+
+.profile-details span i {
+    font-size: 12px;
+}
+
+.profile-details span.online {
+    color: #43866c;
+}
+
+.profile-details span.offline {
+    color: #121312;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.users {
+    max-height: 300px;
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+
+:is(.users, .chat-messages)::-webkit-scrollbar {
+    width: 3px;
+}
+
+:is(.users, .chat-messages)::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: var(--border-radius);
+}
+
+:is(.users, .chat-messages):hover::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+}
+
+.chat-messages:hover::-webkit-scrollbar-thumb {
+    background-color: #686867;
+}
+
+/* chating room */
+.chating-container {
+    padding: 0;
+    background-color: rgb(249, 235, 235);
+}
+
+.contact-profile .img {
+    width: 50px;
+}
+
+.chat-header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+}
+
+.chat-header a {
+    color: black;
+    font-size: 20px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.chat-header a:hover {
+    background-color: rgb(230, 227, 227);
+}
+
+.contact-profile {
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 3px;
+}
+
+.contact-info {
+    margin: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-info span {
+    color: #333332;
+    font-size: 15px;
+}
+
+.chating-input {
+    display: flex;
+    padding: 15px 25px;
+    height: 70px;
+    background: white;
+}
+
+.chating-input input {
+    width: 90%;
+    outline: none;
+    padding: 0 10px;
+    margin: 0 3px 0 0;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #afafae;
+}
+
+:is(.chating-input) input,
+input::placeholder {
+    color: #777776;
+}
+
+.chating-input button {
+    width: 10%;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #afafae;
+    cursor: pointer;
+    background-color: #2a2a29;
+    color: white;
+}
+
+.chating-input button:hover {
+    background-color: white;
+    color: #2a2a29;
+}
+
+/* Chating section styles */
+
+.chat-messages {
+    padding: 5px 20px;
+    max-height: 60vh;
+    overflow-y: scroll;
+    background: #e1e1e0;
+}
+
+.incoming-message .img {
+    width: 30px;
+    /* display: none; */
+    /* position: absolute; */
+}
+
+.message {
+    display: flex;
+    margin: 15px 0;
+    /* align-items: flex-end; */
+    /* justify-content: right; */
+    /* margin-left: auto; */
+    /* background-color: red !important; */
+}
+
+.message .message-text {
+    max-width: 80%;
+    width: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+.outgoing-message {
+    /* justify-content: right; */
+}
+.incoming-message {
+    align-items: flex-start;
+}
+
+.outgoing-message .message-text {
+    background-color: #323231;
+    color: white;
+    font-weight: 200;
+    border-bottom-right-radius: 0;
+}
+
+.incoming-message .message-text {
+    background-color: white;
+    color: #323231;
+    border-bottom-left-radius: 0;
+    margin: 0 0 0 10px;
+}
